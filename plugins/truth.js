@@ -1,5 +1,5 @@
 let handler = async (m, { conn, usedPrefix, command }) => {
-  await conn.sendButton(m.chat, `“${pickRandom(global.truth)}”`, watermark, 'TRUTH', `${usedPrefix + command}`)
+  await conn.send2Button(m.chat, `“${pickRandom(global.truth)}”`, watermark, 'NEXT PLAYER', `.tod` , 'PICK DARE',`.dare` )
 }
 handler.help = ['truth']
 handler.tags = ['fun']
@@ -7,7 +7,7 @@ handler.command = /^(truth)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
-handler.group = false
+handler.group = true
 handler.private = false
 
 handler.admin = false
