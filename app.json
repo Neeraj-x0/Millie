@@ -4,4 +4,26 @@
   "repository": "https://github.com/Neeraj-x0/Millie",
   "logo": "https://i.imgur.com/Pf1Wynm.png",
   "keywords": ["bot", "whatsapp", "whatsapp-bot"]
+  
+   "buildpacks": [
+
+        {
+
+            "url": "heroku/nodejs"
+
+        },
+
+        {
+
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+
+        },
+
+        {
+
+            "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick"
+
+        }
+
+    ]
 }
