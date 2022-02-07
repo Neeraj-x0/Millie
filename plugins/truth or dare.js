@@ -16,3 +16,9 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   handler.fail = null
   
   module.exports = handler
+
+function pickRandom(list) {
+  return list[Math.floor(list.length * Math.random())]
+}
+
+global.tod = JSON.parse(fs.readFileSync('./src/tod.json'))
