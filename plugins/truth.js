@@ -8,6 +8,7 @@ handler.owner = false
 handler.mods = false
 handler.premium = false
 handler.group = true
+handler.tod = true
 handler.private = false
 
 handler.admin = false
