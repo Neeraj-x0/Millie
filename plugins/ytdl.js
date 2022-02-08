@@ -3,7 +3,7 @@ let fetch = require('node-fetch')
 const { servers, yt } = require('../lib/y2mate')
 
 let handler = async (m, { itsu, args, isPrems, isOwner, usedPrefix, text }) => {
-  if (!args || !args[0]) throw 'Uhm... urlnya mana?'
+  if (!args || !args[0]) throw 'Uhm... Where is the link ?'
   let chat = global.DATABASE.data.chats[m.chat]
   let quality = args[1] || '360'
   let server = (args[2] || servers[0]).toLowerCase()
@@ -13,7 +13,7 @@ let handler = async (m, { itsu, args, isPrems, isOwner, usedPrefix, text }) => {
 await itsu.relayWAMessage(itsu.prepareMessageFromContent(m.chat, {
                     "listMessage":  {
                         "title": `*Title*: ${title}`,
-                        "description": " \n_©ᴡɪᴢᴀʀᴅ sᴇʀ_ ",
+                        "description": " \n_©ᴍɪʟʟɪᴇ_ ",
                         "buttonText": `Quality`,
                         "listType": "SINGLE_SELECT",
                         "sections": [
@@ -23,7 +23,7 @@ await itsu.relayWAMessage(itsu.prepareMessageFromContent(m.chat, {
                                         "title": `Audio`, "description":  title,
                                         "rowId": `${usedPrefix}dlmsc ${args[0]}`
                                     }, {
-                                       "title": `240p✅ , "description": title,
+                                       "title": `240p✅` , "description": title,
                                        "rowId": `${usedPrefix}dlvid ${args[0]} 240`
                                     }, {
                                        "title": `360p✅`,
@@ -35,7 +35,7 @@ await itsu.relayWAMessage(itsu.prepareMessageFromContent(m.chat, {
                                         "rowId": `${usedPrefix}dlvid ${args[0]} 480`
                                     }, {
                                         "title": `720p✅`,
-"description": '```Sedang dalam perbaikan ❕```', 
+"description": '```Under repair ❕```', 
                                         "rowId": `${usedPrefix}dlvid ${args[0]} 720`                               
                                     }, { 
                                         "title": `1080p✅`,
@@ -44,7 +44,7 @@ await itsu.relayWAMessage(itsu.prepareMessageFromContent(m.chat, {
                                     },{
 "title": `Menu`,
 "description": ``, 
-                                       "rowId": `${usedPrefix} menu`}
+                                       "rowId": `${usedPrefix} menu`},
                                 ]
                             }
                         ]
