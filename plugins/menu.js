@@ -9,7 +9,7 @@ let moment = require('moment-timezone')
 const defaultMenu = {
   before: `
 ╭────────────────╮
-|         ✪  *ᴍɪʟʟɪᴇ* ✪              |
+ |         ✪  *ᴍɪʟʟɪᴇ* ✪              |
 ╰────────────────╯
      
 
@@ -166,6 +166,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
           "title": `HI,
+          
+          
 ┌─────❲ *MENU* ❳
 ┊☞  Oi ${ucapan()}
 ┊☞ 👤 *NAME* : ${name}
