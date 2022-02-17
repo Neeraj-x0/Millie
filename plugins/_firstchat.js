@@ -10,27 +10,10 @@ handler.all = async function (m) {
     let user = global.db.data.users[m.sender]
     if (new Date - user.pc < 86400000) return // setiap 24 jam sekali
     await this.sendButton(m.chat, `
-Hai, ${ucapan()}
-${user.banned} 'you are banned' : 'Iam ᴍɪʟʟɪᴇ, please dont spam/call/ask to save to this number. Can I help you?, Type .menu To Get Bot Menu'
+Hai,
+ 'I am ᴍɪʟʟɪᴇ, please dont spam,call,ask to save to this number. Can I help you?, Type .menu To Get Bot Menu'
 `.trim(), watermark, user.banned ? 'Bot Owner' : 'Menu', user.banned ? '.owner' : '.?', m)
     user.pc = new Date * 1
 }
 
 module.exports = handler
-function ucapan() {
-    const time = moment.tz('Asia/Kolkata').format('HH')
-    res = "Good morning"
-    if (time >= 4) {
-        res = "Good morning"
-    }
-    if (time > 10) {
-        res = "Good afternoon"
-    }
-    if (time >= 15) {
-        res = "Good afternoon"
-    }
-    if (time >= 18) {
-        res = "Good night"
-    }
-    return res
-}
