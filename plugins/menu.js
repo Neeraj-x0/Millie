@@ -15,7 +15,7 @@ const defaultMenu = {
 
 `,
 header: '┌─〔 %category 〕',
-  body: '┃ %cmd',
+  body: '├ %cmd',
   footer: '└────\n',
   after: `
 
@@ -164,9 +164,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     })
     if (teks == '404') {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
-        "listMessage":  {
-                        "title": "𝐌𝐈𝐋𝐋𝐈𝐄 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐁𝐎𝐓",
-                        "description": `HI,
+        "listMessage": {
+          "title": `HI,
           
           
 ╭━━━━━━ᆫ ᴍᴇɴᴜ ᄀ━━━━━━
@@ -177,44 +176,99 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 ┃ ⎆  *DATE* : ${date},
 ┃ ⎆  *OWNER* :  ɴᴇᴇʀᴀᴊ
 ┃ ⎆  *PREFIX* : ᴍᴜʟᴛɪ ᴘʀᴇғɪx 
-╰━━━━━━━━━━━━━━━━━━━━━━━ \n\`,
-                        "buttonText": `𝕄 𝔼 ℕ 𝕌`,
-                        "listType": "SINGLE_SELECT",
-                        "sections": [
-                            { title: '『𝕄 𝔼 ℕ 𝕌』',
-                                "rows": [
-                                    {
-                                        "title": `『👥』- ʙᴏᴛ ɢʀᴏᴜᴘ `, "description":  ``,
-                                        "rowId": `${usedPrefix}from`
-                                    }, {
-                                       "title": `『⌛』-  ʀᴜɴᴛɪᴍᴇ` , "description": ``,
-                                       "rowId": `${usedPrefix}runtime`
-                                    }, {
-                                       "title": `『👤』- ᴏᴡɴᴇʀ`,
-"description": ``, 
-                                       "rowId": `${usedPrefix}owner`
-                                    }, {
-                                       "title": `『⚙️』- SC `,
-"description": ``, 
-                                        "rowId": `${usedPrefix}sc`
-                                    }, {
-                                        "title": `『📄』- ᴀʙᴏᴜᴛ `,
-"description": ``, 
-                                        "rowId": `${usedPrefix}about`                               
-                                    }, { 
-                                        "title": `『📱』- sᴛᴀᴛs`,
-"description": ``, 
-                                        "rowId": `${usedPrefix}stats`
-                                    },{
-"title": `『⋮☰』- ᴍᴇɴᴜ`,
-"description": ``, 
-                                       "rowId": `${usedPrefix}404`}
-                                ]
-                            }
-                        ]
-                    }
-                 }, {quoted: anu}),{waitForAck: true}
-)
+╰━━━━━━━━━━━━━━━━━━━━━━━ \n\`
+          
+           .trim(),
+           "description": "",
+          "buttonText": "Click  Here",
+          "listType": "SINGLE_SELECT",
+          "sections": [
+            {
+              "rows": [
+                {
+                  "title": `ᴍɪʟʟɪᴇ`,
+                  "description": "ᴍɪʟʟɪᴇ git link",
+                  "rowId": ".git"
+                }, {
+                  "title": "💻Game",
+                  "description": " ",
+                  "rowId": ".? game"
+
+                }, {
+                  "title": "💸XP",
+                  "description": " ",
+                  "rowId": ".? xp"
+
+                },  {
+                  "title": "Video Maker",
+                  "description": " ",
+                  "rowId": ".? .videomaker"
+
+                },{
+                  "title": "Sticker",
+                  "description": " ",
+                  "rowId": ".? stiker"
+                }, { 
+                "title": "Anime",
+                "description": " ",
+                "rowId": ".? anime"
+              },  {
+                  "title": "Quotes",
+                  "description": " ",
+                  "rowId": ".? quote"
+                }, {
+                  "title": "Admin",
+                  "description": " ",
+                  "rowId": ".? admin"
+                }, {
+                  "title": "Group",
+                  "description": " ",
+                  "rowId": ".? grup"
+                }, {
+                  "title": "Premium",
+                  "description": " ",
+                  "rowId": ".? premium"
+                }, {
+                  "title": "Internet",
+                  "description": " ",
+                  "rowId": ".? internet"
+                }, {
+                  "title": "Anonymous",
+                  "description": " ",
+                  "rowId": ".? anonymous"
+                }, {
+                  "title": "Magic Shell",
+                  "description": "Random answer feature",
+                  "rowId": `.? magicshell`
+                }, {
+                  "title": "Nulis & Logo",
+                  "description": " ",
+                  "rowId": ".? nulis"
+                }, {
+                  "title": "Downloader",
+                  "description": " ",
+                  "rowId": ".? downloader"
+                }, {
+                  "title": "Tools",
+                  "description": " ",
+                  "rowId": ".? tools"
+                }, {
+                  "title": "Voice Changer",
+                  "description": " ",
+                  "rowId": `.? audio`
+                }, {
+                  "title": "Fun",
+                  "description": " ",
+                  "rowId": ".? fun"
+                }, {
+                  "title": "Database",
+                  "description": " ",
+                  "rowId": ".? database"
+                },{
+                  "title": "Owner",
+                  "description": " ",
+                  "rowId": ".? owner"
+                }
               ]
             }
           ], "contextInfo": {
@@ -228,27 +282,27 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     // use this if you use business whatsapp
     //   throw `
     // ┌〔 LIST MENU 〕
-    // ┃ ${_p + command} all
-    // ┃ ${_p + command} game
-    // ┃ ${_p + command} xp
-    // ┃ ${_p + command} stiker
-    // ┃ ${_p + command} quotes
-    // ┃ ${_p + command} admin
-    // ┃ ${_p + command} group
-    // ┃ ${_p + command} premium
-    // ┃ ${_p + command} internet
-    // ┃ ${_p + command} anonymous
-    // ┃ ${_p + command} nulis
-    // ┃ ${_p + command} downloader
-    // ┃ ${_p + command} tools
-    // ┃ ${_p + command} fun
-    // ┃ ${_p + command} database
-    // ┃ ${_p + command} vote
-    // ┃ ${_p + command} quran
-    // ┃ ${_p + command} audio
-    // ┃ ${_p + command} jadibot
-    // ┃ ${_p + command} info
-    // ┃ ${_p + command} owner
+    // ├ ${_p + command} all
+    // ├ ${_p + command} game
+    // ├ ${_p + command} xp
+    // ├ ${_p + command} stiker
+    // ├ ${_p + command} quotes
+    // ├ ${_p + command} admin
+    // ├ ${_p + command} group
+    // ├ ${_p + command} premium
+    // ├ ${_p + command} internet
+    // ├ ${_p + command} anonymous
+    // ├ ${_p + command} nulis
+    // ├ ${_p + command} downloader
+    // ├ ${_p + command} tools
+    // ├ ${_p + command} fun
+    // ├ ${_p + command} database
+    // ├ ${_p + command} vote
+    // ├ ${_p + command} quran
+    // ├ ${_p + command} audio
+    // ├ ${_p + command} jadibot
+    // ├ ${_p + command} info
+    // ├ ${_p + command} owner
     // └────  
     //     `.trim()
     let groups = {}
