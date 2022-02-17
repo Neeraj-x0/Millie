@@ -1,4 +1,4 @@
-let axios = require('axios')
+/*let axios = require('axios')
 const googleTTS = require('google-tts-api')
 let { MessageType}  = require('@adiwajshing/baileys')
 const { text } = require('cheerio/lib/static')
@@ -19,3 +19,4 @@ handler.before = async (m) => {
               })
               conn.sendFile(m.chat, url, 'simi.opus', null, m, true)
           })}
+          */
