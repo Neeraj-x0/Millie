@@ -166,7 +166,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage":  {
                         "title": "𝐌𝐈𝐋𝐋𝐈𝐄 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐁𝐎𝐓",
-                        "description": "`HI,
+                        "description": `HI,
           
           
 ╭━━━━━━ᆫ ᴍᴇɴᴜ ᄀ━━━━━━
@@ -177,8 +177,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 ┃ ⎆  *DATE* : ${date},
 ┃ ⎆  *OWNER* :  ɴᴇᴇʀᴀᴊ
 ┃ ⎆  *PREFIX* : ᴍᴜʟᴛɪ ᴘʀᴇғɪx 
-╰━━━━━━━━━━━━━━━━━━━━━━━ \n\`
-          ",
+╰━━━━━━━━━━━━━━━━━━━━━━━ \n\`,
                         "buttonText": `𝕄 𝔼 ℕ 𝕌`,
                         "listType": "SINGLE_SELECT",
                         "sections": [
