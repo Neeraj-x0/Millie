@@ -9,13 +9,13 @@ let moment = require('moment-timezone')
 const defaultMenu = {
   before: `
 ╭────────────────╮
- |         ✪  *ᴍɪʟʟɪᴇ* ✪              |
+ |           ✪  *ᴍɪʟʟɪᴇ* ✪            |
 ╰────────────────╯
      
 
 `,
 header: '┌─〔 %category 〕',
-  body: '├ %cmd',
+  body: '┃ %cmd',
   footer: '└────\n',
   after: `
 
@@ -164,112 +164,58 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     })
     if (teks == '404') {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
-        "listMessage": {
-          "title": `HI,
+        "listMessage":  {
+                        "title": "𝐌𝐈𝐋𝐋𝐈𝐄 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐁𝐎𝐓",
+                        "description": "`HI,
           
           
-┌─────❲ *MENU* ❳
-┊☞  Oi ${ucapan()}
-┊☞ 👤 *NAME* : ${name}
-┊☞ 🧭 *TIME* : ${time},
-┊☞ 💫 *WEEK* : ${week},
-┊☞ ✅ *DATE* : ${date},
-┊☞ 💝 *OWNER* :  ɴᴇᴇʀᴀᴊ
-┊☞ 🖌️ *PREFIX* : ᴍᴜʟᴛɪ ᴘʀᴇғɪx 
-┊☞ ☮️ *BOT NAME* : ᴍɪʟʟɪᴇ
-└─────────────────⸙ \n\ ______`
-          
-           .trim(),
-           "description": "*DON'T SPAM*",
-          "buttonText": "Click  Here",
-          "listType": "SINGLE_SELECT",
-          "sections": [
-            {
-              "rows": [
-                {
-                  "title": `ᴍɪʟʟɪᴇ`,
-                  "description": "ᴍɪʟʟɪᴇ git link",
-                  "rowId": ".git"
-                }, {
-                  "title": "💻Game",
-                  "description": "Game features",
-                  "rowId": ".? game"
-
-                }, {
-                  "title": "💸XP",
-                  "description": "Features level & usage limit",
-                  "rowId": ".? xp"
-
-                },  {
-                  "title": "Video Maker",
-                  "description": "Making Different Types Of Videos",
-                  "rowId": ".? .videomaker"
-
-                },{
-                  "title": "Sticker",
-                  "description": "Features for making stickers",
-                  "rowId": ".? stiker"
-                }, { 
-                "title": "Anime",
-                "description": "Anime Related Plugin",
-                "rowId": ".? anime"
-              },  {
-                  "title": "Quotes",
-                  "description": "Gives You random quotes",
-                  "rowId": ".? quote"
-                }, {
-                  "title": "Admin",
-                  "description": "Group Admin Commands",
-                  "rowId": ".? admin"
-                }, {
-                  "title": "Group",
-                  "description": "Group Related Commands",
-                  "rowId": ".? grup"
-                }, {
-                  "title": "Premium",
-                  "description": "Premium Users Plugins",
-                  "rowId": ".? premium"
-                }, {
-                  "title": "Internet",
-                  "description": "Commands Related To Internet",
-                  "rowId": ".? internet"
-                }, {
-                  "title": "Anonymous",
-                  "description": "To Start Anonymous Chatting",
-                  "rowId": ".? anonymous"
-                }, {
-                  "title": "Magic Shell",
-                  "description": "Random answer feature",
-                  "rowId": `.? magicshell`
-                }, {
-                  "title": "Nulis & Logo",
-                  "description": "Text Maker Coammnds",
-                  "rowId": ".? nulis"
-                }, {
-                  "title": "Downloader",
-                  "description": "Downloading Commnds",
-                  "rowId": ".? downloader"
-                }, {
-                  "title": "Tools",
-                  "description": "Tool features",
-                  "rowId": ".? tools"
-                }, {
-                  "title": "Voice Changer",
-                  "description": "To change the voice",
-                  "rowId": `.? audio`
-                }, {
-                  "title": "Fun",
-                  "description": "Just for fun",
-                  "rowId": ".? fun"
-                }, {
-                  "title": "Database",
-                  "description": "User database",
-                  "rowId": ".? database"
-                },{
-                  "title": "Owner",
-                  "description": "Owner's special features",
-                  "rowId": ".? owner"
-                }
+╭━━━━━━ᆫ ᴍᴇɴᴜ ᄀ━━━━━━
+┃ ⎆  Oi ${ucapan()}
+┃ ⎆  *NAME* : ${name}
+┃ ⎆  *TIME* : ${time},
+┃ ⎆  *WEEK* : ${week},
+┃ ⎆  *DATE* : ${date},
+┃ ⎆  *OWNER* :  ɴᴇᴇʀᴀᴊ
+┃ ⎆  *PREFIX* : ᴍᴜʟᴛɪ ᴘʀᴇғɪx 
+╰━━━━━━━━━━━━━━━━━━━━━━━ \n\`
+          ",
+                        "buttonText": `𝕄 𝔼 ℕ 𝕌`,
+                        "listType": "SINGLE_SELECT",
+                        "sections": [
+                            { title: '『𝕄 𝔼 ℕ 𝕌』',
+                                "rows": [
+                                    {
+                                        "title": `『👥』- ʙᴏᴛ ɢʀᴏᴜᴘ `, "description":  ``,
+                                        "rowId": `${usedPrefix}from`
+                                    }, {
+                                       "title": `『⌛』-  ʀᴜɴᴛɪᴍᴇ` , "description": ``,
+                                       "rowId": `${usedPrefix}runtime`
+                                    }, {
+                                       "title": `『👤』- ᴏᴡɴᴇʀ`,
+"description": ``, 
+                                       "rowId": `${usedPrefix}owner`
+                                    }, {
+                                       "title": `『⚙️』- SC `,
+"description": ``, 
+                                        "rowId": `${usedPrefix}sc`
+                                    }, {
+                                        "title": `『📄』- ᴀʙᴏᴜᴛ `,
+"description": ``, 
+                                        "rowId": `${usedPrefix}about`                               
+                                    }, { 
+                                        "title": `『📱』- sᴛᴀᴛs`,
+"description": ``, 
+                                        "rowId": `${usedPrefix}stats`
+                                    },{
+"title": `『⋮☰』- ᴍᴇɴᴜ`,
+"description": ``, 
+                                       "rowId": `${usedPrefix}404`}
+                                ]
+                            }
+                        ]
+                    }
+                 }, {quoted: anu}),{waitForAck: true}
+)
               ]
             }
           ], "contextInfo": {
@@ -283,27 +229,27 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     // use this if you use business whatsapp
     //   throw `
     // ┌〔 LIST MENU 〕
-    // ├ ${_p + command} all
-    // ├ ${_p + command} game
-    // ├ ${_p + command} xp
-    // ├ ${_p + command} stiker
-    // ├ ${_p + command} quotes
-    // ├ ${_p + command} admin
-    // ├ ${_p + command} group
-    // ├ ${_p + command} premium
-    // ├ ${_p + command} internet
-    // ├ ${_p + command} anonymous
-    // ├ ${_p + command} nulis
-    // ├ ${_p + command} downloader
-    // ├ ${_p + command} tools
-    // ├ ${_p + command} fun
-    // ├ ${_p + command} database
-    // ├ ${_p + command} vote
-    // ├ ${_p + command} quran
-    // ├ ${_p + command} audio
-    // ├ ${_p + command} jadibot
-    // ├ ${_p + command} info
-    // ├ ${_p + command} owner
+    // ┃ ${_p + command} all
+    // ┃ ${_p + command} game
+    // ┃ ${_p + command} xp
+    // ┃ ${_p + command} stiker
+    // ┃ ${_p + command} quotes
+    // ┃ ${_p + command} admin
+    // ┃ ${_p + command} group
+    // ┃ ${_p + command} premium
+    // ┃ ${_p + command} internet
+    // ┃ ${_p + command} anonymous
+    // ┃ ${_p + command} nulis
+    // ┃ ${_p + command} downloader
+    // ┃ ${_p + command} tools
+    // ┃ ${_p + command} fun
+    // ┃ ${_p + command} database
+    // ┃ ${_p + command} vote
+    // ┃ ${_p + command} quran
+    // ┃ ${_p + command} audio
+    // ┃ ${_p + command} jadibot
+    // ┃ ${_p + command} info
+    // ┃ ${_p + command} owner
     // └────  
     //     `.trim()
     let groups = {}
