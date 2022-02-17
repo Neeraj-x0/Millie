@@ -12,7 +12,7 @@ handler.all = async function (m) {
     await this.sendButton(m.chat, `
 Hai,
  'I am ᴍɪʟʟɪᴇ, please dont spam,call,ask to save to this number. Can I help you?, Type .menu To Get Bot Menu'
-`.trim(), watermark, user.banned ? 'Bot Owner' : 'Menu', user.banned ? '.owner' : '.?', m)
+`.trim(), watermark, user.banned ? 'Bot Owner' : 'Menu',`.menu`'.owner' ,`.owner`, m)
     user.pc = new Date * 1
 }
 
