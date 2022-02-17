@@ -1,4 +1,4 @@
-let handler = async (m, { conn, text }) => {
+/*let handler = async (m, { conn, text }) => {
   let id = m.chat
   conn.math = conn.math ? conn.math : {}
   if (id in conn.math) {
@@ -36,3 +36,4 @@ handler.command = /^(calc(ulat(e|or))?|kalk(ulator)?)$/i
 handler.exp = 5
 
 module.exports = handler
+*/
