@@ -1,4 +1,4 @@
-let handler = async (m, { conn, usedPrefix, command }) => {
+/*let handler = async (m, { conn, usedPrefix, command }) => {
     await conn.send2Button(m.chat, `“${pickRandom(global.tod)}\nPICK ONE”`, watermark, 'TRUTH', `.truth`,'DARE',`.dare`)
   }
   handler.help = ['tod']
@@ -22,3 +22,4 @@ function pickRandom(list) {
 }
 
 global.tod = JSON.parse(fs.readFileSync('./src/tod.json'))
+*/
