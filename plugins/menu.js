@@ -6,7 +6,7 @@ let fetch = require('node-fetch')
 let moment = require('moment-timezone')
 const defaultMenu = {
   before: `
-  ╭────────────────╮
+   ╭────────────────╮
    |             ✪  *ᴍɪʟʟɪᴇ* ✪           |
   ╰────────────────╯
        
@@ -171,7 +171,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 ┃ ⎆  *BOT*   : ᴍɪʟʟɪᴇ
 ┃ ⎆  *OWNER* :  ɴᴇᴇʀᴀᴊ
 ┃ ⎆  *PREFIX* : ᴍᴜʟᴛɪ ᴘʀᴇғɪx 
-┃ ⎆  *TIME* : ${time},
 ┃ ⎆  *WEEK* : ${week},
 ┃ ⎆  *DATE* : ${date},
 ╰━━━━━━━━━━━━━━━━━━━━━━━ \n`
@@ -352,13 +351,13 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send2ButtonLoc(m.chat, await (await fetch("https://github.com/neera-j/Bot-Files/blob/main/images/millie.jpg")).buffer(), text.trim(), '© ᴍɪʟʟɪᴇ ©', 'Owner Bot', ',owner', 'All Commands', '.? all', m)
+    await conn.send2ButtonLoc(m.chat, await (await fetch("https://raw.githubusercontent.com/neera-j/Bot-Files/main/images/millie.jpg")).buffer(), text.trim(), '© ᴍɪʟʟɪᴇ ©', 'Owner Bot', ',owner', 'All Commands', '.? all', m)
   } catch (e) {
     conn.reply(m.chat, 'Sorry, Try Again', m)
     throw e
   }
 }
-handler.help = ['menu', 'help','list','wizard', '?']
+handler.help = ['menu', 'help', '?']
 handler.tags = ['main']
 handler.command = /^(listt|\?)$/i
 handler.owner = false
