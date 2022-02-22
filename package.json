@@ -27,6 +27,7 @@
   "homepage": "https://github.com/Neeraj-x0/Millie",
   "dependencies": {
     "@adiwajshing/baileys": "^3.5.2",
+    "@bochilteam/scraper": "0.0.81",
     "awesome-phonenumber": "^2.54.0",
     "axios": "^0.21.1",
     "brainly-scraper-v2": "^2.0.3",
