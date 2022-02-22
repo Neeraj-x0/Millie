@@ -28,7 +28,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 *Audio File Size:* ${filesizeF}
 *Video File Size:* ${yt2.filesizeF}
 *Play Doesnt Work ,In Disappearing mode*
-`.trim(), watermark, '🎵ᴀᴜᴅɪᴏ', `.yta ${vid.url}`, '🎥ᴠɪᴅᴇᴏ', `.yt ${vid.url}`)
+`.trim(), watermark, '🎵ᴀᴜᴅɪᴏ', `.yta ${vid.url}`, '🎥ᴠɪᴅᴇᴏ', `.ytv ${vid.url}`)
 }
 handler.help = ['song','play','?'].map(v => v + ' <query>')
 handler.tags = ['downloader']
