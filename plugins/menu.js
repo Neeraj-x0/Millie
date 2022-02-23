@@ -5,10 +5,9 @@ let path = require('path')
 let fetch = require('node-fetch')
 let moment = require('moment-timezone')
 const defaultMenu = {
-  before: `
-   ╭────────────────╮
-   |             ✪  *ᴍɪʟʟɪᴇ* ✪           |
-  ╰────────────────╯
+  before: `╭────────────────╮
+|             ✪  *ᴍɪʟʟɪᴇ* ✪           |
+╰────────────────╯
        
 
   `.trimStart(),
@@ -16,7 +15,7 @@ const defaultMenu = {
   body: '├ %cmd',
   footer: '└────\n',
   after: `
-          ᴹᴵᴸᴸᴵᴱ
+   ᴹᴵᴸᴸᴵᴱ
    ᴹᴼᴰᵁᴸᴬᴿ ᵂᴴᴬᵀᔆᴬᴾᴾ ᴮᴼᵀ
 `,
 }
@@ -351,7 +350,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send2ButtonLoc(m.chat, await (await fetch("https://raw.githubusercontent.com/neera-j/Bot-Files/main/images/millie.jpg")).buffer(), text.trim(), '© ᴍɪʟʟɪᴇ ©', 'Owner Bot', ',owner', 'All Commands', '.? all', m)
+    await conn.send2ButtonLoc(m.chat, await (await fetch("https://raw.githubusercontent.com/Neeraj-x0/Millie/main/Millie/mills.jpeg")).buffer(), text.trim(), '© ᴍɪʟʟɪᴇ ©', 'Owner Bot', '.owner', 'All Commands', '.listt', m)
   } catch (e) {
     conn.reply(m.chat, 'Sorry, Try Again', m)
     throw e
