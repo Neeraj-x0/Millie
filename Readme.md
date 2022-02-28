@@ -1,8 +1,8 @@
 
-# *Millie Whatsapp Bot*
+# *ABHISHEK SER Whatsapp Bot*
 <div align="center">
   
-  [![Millie Whatsapp Bot](https://readme-typing-svg.herokuapp.com?font=times-bold-italic&color=%23F7F7F7&duration=4862&center=true&vCenter=true&lines=WELCOME+TO+MILLIE+WHATSAPP+BOT)](https://github.com/Neeraj-x0/Millie)
+  [![ABHISHEK SER Whatsapp Bot](https://readme-typing-svg.herokuapp.com?font=times-bold-italic&color=%23F7F7F7&duration=4862&center=true&vCenter=true&lines=WELCOME+TO+MILLIE+WHATSAPP+BOT)](https://github.com/Neeraj-x0/Millie)
 </div>
 <div align="center">
   <img border-radius: 15px src="https://i.imgur.com/Pf1Wynm.png" width="200" height="200"/>
@@ -12,14 +12,14 @@
   <a href="https://wa.me/918113921898"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 </p>
 
-## `JOIN MILLIE WHATSAPP GROUP`
+## `JOIN ABHISHEK SER WHATSAPP GROUP`
 
   [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png?size=25)](https://chat.whatsapp.com/Fz6MPHhRIl840px7eRuYYr)
 
 
 ## `FORK AND CHANGE SETTINGS`
 
-- OWNER NUMBER         [`CLICK HERE`](https://github.com/Neeraj-x0/Millie/blob/main/config.js#L2)
+- OWNER         [`CLICK HERE`](https://github.com/Neeraj-x0/Millie/blob/main/config.js#L2)
 - SESSION           [`Click Here`](https://github.com/Neeraj-x0/Millie/blob/main/session.data.json#L1)
 
 
@@ -29,7 +29,7 @@
 
 ## `DEPLOY`
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Neeraj-x0/Millie)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/BOSSMODZ/Millie)
 
 
 ## `CHANGE DYNO`
