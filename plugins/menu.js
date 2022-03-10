@@ -5,8 +5,9 @@ let path = require('path')
 let fetch = require('node-fetch')
 let moment = require('moment-timezone')
 const defaultMenu = {
-  before: `╭────────────────╮
-|             ✪  *ᴍɪʟʟɪᴇ* ✪           |
+  before: `
+╭────────────────╮
+             ✪  *ᴍɪʟʟɪᴇ* ✪           
 ╰────────────────╯
        
 
@@ -358,7 +359,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 }
 handler.help = ['menu', 'help', '?']
 handler.tags = ['main']
-handler.command = /^(listt|\?)$/i
+handler.command = /^(list|help|menu)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
