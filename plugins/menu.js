@@ -5,12 +5,10 @@ let path = require('path')
 let fetch = require('node-fetch')
 let moment = require('moment-timezone')
 const defaultMenu = {
-  before: `
-╭────────────────╮
-             ✪  *ᴍɪʟʟɪᴇ* ✪           
+    before: `╭────────────────╮
+        ✪  *ᴍɪʟʟɪᴇ* ✪           
 ╰────────────────╯
        
-
   `.trimStart(),
   header: '┌─〔 %category 〕',
   body: '├ %cmd',
@@ -184,86 +182,86 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
               "rows": [
                 {
                   "title": `ᴍɪʟʟɪᴇ`,
-                  "description": "ᴍɪʟʟɪᴇ git link",
+                  "description": "sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ",
                   "rowId": ".git"
                 }, {
-                  "title": "💻Game",
-                  "description": "Game features",
+                  "title": "𝗚𝗮𝗺𝗲𝘀",
+                  "description": "",
                   "rowId": ".? game"
 
                 }, {
-                  "title": "💸XP",
-                  "description": "Features level & usage limit",
+                  "title": "𝗫𝗣",
+                  "description": "",
                   "rowId": ".? xp"
 
                 },  {
-                  "title": "Video Maker",
-                  "description": "Making Different Types Of Videos",
-                  "rowId": ".? .videomaker"
+                  "title": "𝗩𝗶𝗱𝗲𝗼 𝗠𝗮𝗸𝗲𝗿",
+                  "description": "",
+                  "rowId": ".? videomaker"
 
                 },{
-                  "title": "Sticker",
-                  "description": "Features for making stickers",
+                  "title": "𝗦𝘁𝗶𝗰𝗸𝗲𝗿",
+                  "description": "",
                   "rowId": ".? stiker"
                 }, { 
-                "title": "Anime",
-                "description": "Anime Related Plugin",
+                "title": "𝗔𝗻𝗶𝗺𝗲",
+                "description": "",
                 "rowId": ".? anime"
               },  {
-                  "title": "Quotes",
-                  "description": "Gives You random quotes",
+                  "title": "𝗤𝘂𝗼𝘁𝗲𝘀",
+                  "description": "",
                   "rowId": ".? quote"
                 }, {
-                  "title": "Admin",
-                  "description": "Group Admin Commands",
+                  "title": "𝗔𝗱𝗺𝗶𝗻",
+                  "description": "",
                   "rowId": ".? admin"
                 }, {
-                  "title": "Group",
-                  "description": "Group Related Commands",
+                  "title": "𝗚𝗿𝘂𝗽",
+                  "description": "",
                   "rowId": ".? grup"
                 }, {
-                  "title": "Premium",
-                  "description": "Premium Users Plugins",
+                  "title": "𝗣𝗿𝗲𝗺𝗶𝘂𝗺",
+                  "description": "",
                   "rowId": ".? premium"
                 }, {
-                  "title": "Internet",
-                  "description": "Commands Related To Internet",
+                  "title": "𝗜𝗻𝘁𝗲𝗿𝗻𝗲𝘁",
+                  "description": "",
                   "rowId": ".? internet"
                 }, {
-                  "title": "Anonymous",
-                  "description": "To Start Anonymous Chatting",
+                  "title": "𝗔𝗻𝗼𝗻𝘆𝗺𝗼𝘂𝘀",
+                  "description": "",
                   "rowId": ".? anonymous"
                 }, {
-                  "title": "Magic Shell",
-                  "description": "Random answer feature",
-                  "rowId": `.? magicshell`
+                  "title": "𝗠𝗮𝗴𝗶𝗰 𝗦𝗵𝗲𝗹𝗹",
+                  "description": "",
+                  "rowId": ".? magicshell"
                 }, {
-                  "title": "Nulis & Logo",
-                  "description": "Text Maker Coammnds",
+                  "title": "𝗡𝘂𝗹𝗶𝘀 & 𝗟𝗼𝗴𝗼",
+                  "description": "",
                   "rowId": ".? nulis"
                 }, {
-                  "title": "Downloader",
-                  "description": "Downloading Commnds",
+                  "title": "𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗿",
+                  "description": "",
                   "rowId": ".? downloader"
                 }, {
-                  "title": "Tools",
-                  "description": "Tool features",
+                  "title": "𝗧𝗼𝗼𝗹𝘀",
+                  "description": "",
                   "rowId": ".? tools"
                 }, {
-                  "title": "Voice Changer",
-                  "description": "To change the voice",
+                  "title": "𝗩𝗼𝗶𝗰𝗲 𝗖𝗵𝗮𝗻𝗴𝗲𝗿",
+                  "description": "",
                   "rowId": `.? audio`
                 }, {
-                  "title": "Fun",
-                  "description": "Just for fun",
+                  "title": "𝗙𝘂𝗻",
+                  "description": "",
                   "rowId": ".? fun"
                 }, {
-                  "title": "Database",
-                  "description": "User database",
+                  "title": "𝗗𝗮𝘁𝗮𝗯𝗮𝘀𝗲",
+                  "description": "",
                   "rowId": ".? database"
                 },{
                   "title": "Owner",
-                  "description": "Owner's special features",
+                  "description": "",
                   "rowId": ".? owner"
                 }
               ]
@@ -357,9 +355,9 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     throw e
   }
 }
-handler.help = ['menu', 'help', '?']
+handler.help = ['menu', 'help','list','millie', '?']
 handler.tags = ['main']
-handler.command = /^(list|help|menu)$/i
+handler.command = /^(list|menu|help|millie|bot|\?)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
@@ -369,8 +367,6 @@ handler.private = false
 handler.admin = false
 handler.botAdmin = false
 
-handler.fail = null
-handler.exp = 3
 
 module.exports = handler
 
