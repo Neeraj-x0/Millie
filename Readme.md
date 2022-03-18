@@ -25,7 +25,7 @@
 
 ## `SCAN QR`
 
-[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@neera-j/Millie-x)
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://github.com/Neeraj-x0/SONIC-QR)
 
 ## `DEPLOY`
 
