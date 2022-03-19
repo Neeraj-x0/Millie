@@ -1,6 +1,6 @@
 let fs = require('fs')
-global.owner = ['918113921898'] // Put your number here
-global.mods =  JSON.parse(fs.readFileSync('./src/moderator.json'))// Moderator?
+küresel . sahip  = [ '905379649077' ] // Numaranızı buraya yazın
+küresel . modlar  =   JSON . ayrıştırma ( fs . readFileSync ( './src/moderator.json' )) // Moderatör?
 global.prems = JSON.parse(fs.readFileSync('./src/premium.json')) // Premium users do not need a limit
 global.tod = JSON.parse(fs.readFileSync('./src/tod.json'))
 global.APIs = { // API Prefix
