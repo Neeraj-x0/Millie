@@ -11,11 +11,15 @@
   <a href="https://instagram.com/neer_j_"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/> 
   <a href="https://wa.me/918113921898"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 </p>
+<div align="center">
+  
+## JOIN MILLIE WHATSAPP GROUP
 
-## `JOIN MILLIE WHATSAPP GROUP` 
-
-  [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png?size=25)](https://chat.whatsapp.com/Fz6MPHhRIl840px7eRuYYr)
-
+  [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png?size=1)](https://chat.whatsapp.com/Fz6MPHhRIl840px7eRuYYr)
+ 
+## Yotube Tutorial If You have any doubts 
+  
+  [![Watch Tutorial](https://img.youtube.com/vi/5ox6VPzVSKs/0.jpg)](https://www.youtube.com/watch?v=5ox6VPzVSKs)
 
 ## `FORK AND CHANGE SETTINGS`
 
@@ -25,7 +29,7 @@
 
 ## `SCAN QR`
 
-[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://github.com/Neeraj-x0/SONIC-QR)
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@neera-j/Sonic-QR#index.js)
 
 ## `DEPLOY`
 
