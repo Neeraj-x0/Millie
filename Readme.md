@@ -107,7 +107,7 @@ npm update
 * Download And Install ImageMagick [`Click Here`](https://imagemagick.org/script/download.php)
 
 ```bash
-git clone https://github.com/Nurutomo/wabot-aq
+git clone https://github.com/Neeraj-x0/Millie
 cd Millie
 npm install
 npm update
