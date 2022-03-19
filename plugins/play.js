@@ -2,7 +2,7 @@ const { servers, yta, ytv } = require('../lib/y2mate')
 let yts = require('yt-search')
 let fetch = require('node-fetch')
 let handler = async (m, { conn, command, text, usedPrefix }) => {
-  if (!text) throw `uhm.. what are you looking for?\n\nexample:\n${usedPrefix + command} PaniPalli`
+  if (!text) throw `uhm.. what are you looking for?\n\nexample:\n${usedPrefix + command} Heatwaves`
   let chat = global.db.data.chats[m.chat]
   let results = await yts(text)
   let vid = results.all.find(video => video.seconds < 3600)
@@ -28,7 +28,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 *Audio File Size:* ${filesizeF}
 *Video File Size:* ${yt2.filesizeF}
 *Play Doesnt Work ,In Disappearing mode*
-`.trim(), watermark, '🎶 ᴀᴜᴅɪᴏ', `.yta ${vid.url}`, '▶ ᴠɪᴅᴇᴏ', `.ytv ${vid.url}`)
+`.trim(), watermark, '🔊 ᴀᴜᴅɪᴏ', `.yta ${vid.url}`, '🎥 ᴠɪᴅᴇᴏ', `.ytv ${vid.url}`)
 }
 handler.help = ['song','play','?'].map(v => v + ' <query>')
 handler.tags = ['downloader']
