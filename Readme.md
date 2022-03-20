@@ -32,7 +32,7 @@
   
 ### SCAN QR
 
-[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@neera-j/Sonic-QR#index.js)
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@neera-j/Sonic-QR)
 
 ### DEPLOY
 
