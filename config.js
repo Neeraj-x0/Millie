@@ -1,5 +1,5 @@
 let fs = require('fs')
-global.owner = ['918113921898'] // Put your number here
+global.owner = ['919074692450'] // Put your number here
 global.mods =  JSON.parse(fs.readFileSync('./src/moderator.json'))// Moderator?
 global.prems = JSON.parse(fs.readFileSync('./src/premium.json')) // Premium users do not need a limit
 global.tod = JSON.parse(fs.readFileSync('./src/tod.json'))
@@ -35,7 +35,7 @@ global.APIKeys = { // The APIKey is here
 const spack = fs.readFileSync("lib/exif.json")
 const stickerpack = JSON.parse(spack)
 if (stickerpack.spackname == '') {
-  var sticker_name = '💋 ᴍɪʟʟɪᴇ 💋'
+  var sticker_name = '🤟ABHISHEK SER❤'
 } else {
   var sticker_name = stickerpack.spackname
 }
@@ -55,7 +55,7 @@ global.wait = '_*Please Wait..*_'
 global.eror = '_*Server Error*_'
 global.fla = 'https://github.com/neera-j/Bot-Files/blob/main/images/millie.jpg'
 
-global.watermark = '© ᴍɪʟʟɪᴇ'
+global.watermark = '© ABHISHEK SER'
 
 global.multiplier = 69 // The higher it is, the harder it is to level up
 
