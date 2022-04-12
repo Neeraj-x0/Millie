@@ -32,23 +32,8 @@ global.APIKeys = { // The APIKey is here
 }
 
 // Sticker WM
-const spack = fs.readFileSync("lib/exif.json")
-const stickerpack = JSON.parse(spack)
-if (stickerpack.spackname == '') {
-  var sticker_name = '💋 ᴍɪʟʟɪᴇ 💋'
-} else {
-  var sticker_name = stickerpack.spackname
-}
 
-const file_exif = "lib/exif.json"
-fs.watchFile(file_exif, () => {
-  fs.unwatchFile(file_exif)
-  console.log(chalk.redBright("Update 'exif.json'"))
-  delete require.cache[file_exif]
-  require('./lib/exif.json')
-})
-
-global.packname = sticker_name
+global.packname = '💋 ᴍɪʟʟɪᴇ 💋'
 
 
 global.wait = '_*Please Wait..*_'
