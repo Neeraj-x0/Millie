@@ -1,5 +1,5 @@
 let fs = require('fs')
-global.owner = ['918113921898'] // Put your number here
+global.owner = ['917994424896'] // Put your number here
 global.mods =  JSON.parse(fs.readFileSync('./src/moderator.json'))// Moderator?
 global.prems = JSON.parse(fs.readFileSync('./src/premium.json')) // Premium users do not need a limit
 global.tod = JSON.parse(fs.readFileSync('./src/tod.json'))
