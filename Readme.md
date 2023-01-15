@@ -47,7 +47,7 @@
 ## Developers
   <div align="center">
     
-  [![I_AM_DEVIL](https://telegra.ph/file/fb0b36ed9cdcf93b24df7.jpg?size=25)](https://github.com/D-3-V-1-L) |  [![Neeraj](https://telegra.ph/file/74e9659166febabb45aa0.jpg?size=100)](https://github.com/Neeraj-x0) | [![Ajmal-Achu](https://telegra.ph/file/fa920b55caaa8e8be6f04.jpg?size=100)](https://github.com/Ajmal-Achu) 
+  [![I_AM_DEVIL](https://telegra.ph/file/fb0b36ed9cdcf93b24df7.jpg?size=25)](https://github.com/D-3-V-1-L) |  [![Neeraj](https://avatars.githubusercontent.com/u/95992247?s=400&u=11ab453c80cad67cd112bd44ebbf1904a126939d&v=4)](https://github.com/Neeraj-x0) | [![Ajmal-Achu](https://telegra.ph/file/fa920b55caaa8e8be6f04.jpg?size=100)](https://github.com/Ajmal-Achu) 
 ----|----|----
 [I_AM_DEVIL](https://github.com/D-3-V-1-L)  | [Neeraj](https://github.com/Neeraj-x0) | [Ajmal-Achu](https://github.com/Ajmal-Achu)
 Base, Bug Fixes, Modules | Bug fixes, Modules | Bug Fixes, Modules
